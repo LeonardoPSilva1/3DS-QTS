@@ -7,17 +7,23 @@
     <title>Aula de QTS - 02</title>
 </head>
 <body>
+  <form action="resultado.html" method="get">
     <div class="input-group flex-nowrap">
         <span class="input-group-text" id="addon-wrapping">Nome: </span>
-        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+        <input id="nome" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
       </div>
       <div class="input-group flex-nowrap">
         <span class="input-group-text" id="addon-wrapping">CPF: </span>
-        <input type="text" class="form-control" placeholder="Ex: ***.***.***-**" aria-label="Username" aria-describedby="addon-wrapping">
+        <input id="cpf" type="text" class="form-control" placeholder="Ex: ***.***.***-**" aria-label="Username" aria-describedby="addon-wrapping">
       </div>
       <div class="input-group flex-nowrap">
         <span class="input-group-text" id="addon-wrapping">Salario anual</span>
-        <input type="text" class="form-control" placeholder="Seu salario anual" aria-label="Username" aria-describedby="addon-wrapping">
+        <input id="salario" type="text" class="form-control" placeholder="Seu salario anual" aria-label="Username" aria-describedby="addon-wrapping">
       </div>
+
+      <button type="submit">Enviar</button>
+      
+     </form>
+      
 </body>
 </html>

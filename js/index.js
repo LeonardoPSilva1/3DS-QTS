@@ -8,10 +8,14 @@ class Pessoa {
     }
 
 }
+const urlParams = new URLSearchParams(window.location.search);
 
-var nome = document.querySelector('#nome')
-var cpf = document.querySelector('#cpf')
-var salarioAnual = document.querySelector('#salarioAnual')
+var nome = urlParams.get("#nome") 
+var cpf = urlParams.get("#cpf") 
+var salarioAnual = urlParams.get("#salario") 
+
+console.log(nome)
+
 
 console.log(nome.value)
 console.log(cpf.value)
