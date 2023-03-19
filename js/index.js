@@ -40,5 +40,17 @@ pessoa.calcularAliquota();
 pessoa.calculoParcela();
 console.log(pessoa);
 
-document.getElementById('resultado').innerHTML = 'banana';
+var nomeR = document.getElementById('nome');
+var cpfR = document.getElementById('cpf');
+var salarioR = document.getElementById('salario');
+var taxa = document.getElementById('taxa');
+var parcelaR = document.getElementById('parcelas');
+
+nomeR.innerHTML = pessoa.nome;
+cpfR.innerHTML = pessoa.cpf;
+salarioR.innerHTML = pessoa.salarioAnual;
+taxa.innerHTML = pessoa.taxa
+parcelaR.innerHTML = pessoa.parcela
+
+
 
