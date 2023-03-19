@@ -13,15 +13,15 @@
     <form action="resultado.html" method="GET">
       <div class="input-group flex-nowrap">
           <span class="input-group-text" id="addon-wrapping">Nome: </span>
-          <input id="nome" name="nome" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+          <input required id="nome" name="nome" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
       </div>
       <div class="input-group flex-nowrap">
         <span class="input-group-text" id="addon-wrapping">CPF: </span>
-        <input id="cpf" name="cpf" type="text" class="form-control" placeholder="Ex: ***.***.***-**" aria-label="Username" aria-describedby="addon-wrapping">
+        <input required id="cpf" name="cpf" type="text" class="form-control" placeholder="Ex: ***.***.***-**" aria-label="Username" aria-describedby="addon-wrapping">
       </div>
       <div class="input-group flex-nowrap">
-        <span class="input-group-text" id="addon-wrapping">Salário: </span>
-        <input id="salario" name="salario" type="text" class="form-control" placeholder="Seu salario anual" aria-label="Username" aria-describedby="addon-wrapping">
+        <span class="input-group-text-sal" id="addon-wrapping">Salário: </span>
+        <input min="0" required id="salario" name="salario" type="text" class="form-control" placeholder="Seu salario anual" aria-label="Username" aria-describedby="addon-wrapping">
       </div>
       <div id="btn">
         <button type="submit">Enviar</button>

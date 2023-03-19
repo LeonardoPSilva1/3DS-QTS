@@ -11,9 +11,9 @@ class Pessoa {
         if(this.salarioAnual <= 22847.46){
             this.taxa = 0;
             
-        }else if(this.salarioAnual >= 22847.46 && salarioAnual <= 33919.80){
+        }else if(this.salarioAnual >= 22847.46 && salarioAnual <= 33918.80){
             this.taxa = 7.5
-        }else if(this.salarioAnual >= 33919.80 && salarioAnual <= 45012.60){
+        }else if(this.salarioAnual >= 33918.80 && salarioAnual <= 45012.60){
             this.taxa = 15
         }else if(this.salarioAnual >= 45012.60 && salarioAnual <= 55976.16){
             this.taxa = 22.5
