@@ -7,6 +7,12 @@ class Pessoa{
     private $taxa;
     private $parcela;
 
+    function controler($nome, $cpf, $salarioAnual){
+        $this.nome = $nome
+        $this.cpf = $cpf
+        $this.salarioAnual = $salarioAnual
+    }
+
     public function setNome($nome){
         $this->setNome = $nome;
     }
