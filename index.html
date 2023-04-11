@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script>
+    <title>Aula de QTS - 02</title>
+</head>
+<body>
+  <div id="form">
+    <h2 class="title">Rendimento</h2>
+    <form action="PHP/constructor.php" method="POST">
+      <div class="input-group flex-nowrap">
+          <span class="input-group-text" id="addon-wrapping">Nome: </span>
+          <input required id="nome" name="nome" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+      </div>
+      <div class="input-group flex-nowrap">
+        <span class="input-group-text" id="addon-wrapping">CPF: </span>
+        <input required id="cpf" name="cpf" type="text" class="form-control" placeholder="Ex: ***.***.***-**" aria-label="Username" aria-describedby="addon-wrapping ">
+        <script> 
+          $(document).ready(function() {
+              $('#cpf').inputmask('999.999.999-99', {placeholder: '___.___.___-__'});
+          });
+          </script>
+      </div>
+      <div class="input-group flex-nowrap">
+        <span class="input-group-text-sal" id="addon-wrapping">Salário: </span>
+        <input min="0" required id="salario" name="salario" type="number" class="form-control" placeholder="Seu salario anual" aria-label="Username" aria-describedby="addon-wrapping">
+      </div>
+      <div id="btn">
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
