@@ -7,10 +7,10 @@ class Pessoa{
     private $taxa;
     private $parcela;
 
-    function controler($nome, $cpf, $salarioAnual){
-        $this.nome = $nome
-        $this.cpf = $cpf
-        $this.salarioAnual = $salarioAnual
+    function __controler($nome, $cpf, $salarioAnual){
+        $this->nome = $nome;
+        $this->cpf = $cpf;
+        $this->salarioAnual = $salarioAnual;
     }
 
     public function setNome($nome){
@@ -25,7 +25,7 @@ class Pessoa{
         $this->setCpf = $cpf;
     }
 
-    public function getCpf($cpf){
+    public function getCpf(){
         return $this->cpf;
     }
 
@@ -33,42 +33,42 @@ class Pessoa{
         $this->setSalarioAnual = salarioAnual;
     }
 
-    public function getSalarioAnual($salarioAnual){
-        return $this->SalarioAnual;
+    public function getSalarioAnual(){
+        return $this->salarioAnual;
     }
     public function setTaxa($taxa){
         $this->setTaxa = taxa;
     }
 
-    public function getTaxa($taxa){
-        return $this->Taxa; 
+    public function getTaxa(){
+        return $this->taxa; 
     }
 
     public function setParcela($parcela){
         $this->setParcela = parcela;
     }
 
-    public function getParcela($parcela){
+    public function getParcela(){
         return $this->parcela;
     }
 
-    function calcularAliquota($salarioAnual, $taxa){
-        if($this.getSalarioAnual <= 22847.46){
-            return $this.Taxa = 0;
-        }elseif($this.getSalarioAnual >= 22847.46 && getSalarioAnual <= 33918.80){
-            return $this.getTaxa = 7.5;
-        }elseif($this.getSalarioAnual >=33918.80 && getSalarioAnual <= 45012.60){
-            return $this.getTaxa = 15;
-        }elseif($this.getSalarioAnual >=45012.60 && getSalarioAnual <= 55976.16){
-            return $this.getTaxa = 22.5;
-        }elseif($this.getSalarioAnual > 55976.16){
-            $this.getTaxa = 27.5;
+    function calcularAliquota(){
+        if($this->getSalarioAnual() <= 22847.46){
+            return $this->taxa = 0;
+        }elseif($this->getSalarioAnual() >= 22847.46 && $this->getSalarioAnual() <= 33918.80){
+            return $this->taxa = 7.5;
+        }elseif($this->getSalarioAnual() >=33918.80 && $this->getSalarioAnual() <= 45012.60){
+            return $this->taxa = 15;
+        }elseif($this->getSalarioAnual() >=45012.60 && $this->getSalarioAnual() <= 55976.16){
+            return $this->taxa = 22.5;
+        }elseif($this->getSalarioAnual() > 55976.16){
+            $this->taxa = 27.5;
         }
     }
 
-    function calculoParcela($parcela, $salarioAnual){
-        $this.getParcela = $this.getSalarioAnual*($this.getTaxa/100);
-        $this.getParcela = $this.getParcela.toFixed(2);
+    function calculoParcela(){
+        $this->parcela = $this->getSalarioAnual()*($this->getTaxa()/100);
+        $this->parcela = "R$".number_format($this->parcela, 2, '.', '');
 
 }
 
