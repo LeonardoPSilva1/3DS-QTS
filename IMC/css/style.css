@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;300;400&display=swap');
+
+title{
+    font-family: "Sora";
+}
+
+body {
+    background-color: #1A1A1B;
+    font-size: 1.6rem;
+    font-family: "Sora";
+    color: #FFFFFF;
+    align-items: center;
+    text-align: center;
+}
+
+input {
+    display: block;
+    box-sizing: border-box;
+    width:30%;
+    outline: none;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 8px;
+    margin: auto;
+    margin-block-end: 1.5rem;
+}
+
+input[type="nome"],
+input[type="idade"],
+input[type="altura"],
+input[type="peso"] {
+    width:  30%;
+    padding: 0 0 0 10px;
+    margin: 10px 0;
+    color: #8a8b8e;
+    border: 1px solid #7051E2;
+    font-family: 'Sora';
+    font-style: normal;
+    font-size: 16px;
+    -webkit-appearance: none;
+        -moz-appearance: none;
+            appearance: none;
+    position: relative;
+    display: inline-block;
+    background: none;
+    border-radius: 45px;
+}
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="number"]:focus,
+input[type="number"]:focus {
+  border-color: #7051E2;
+  
+}
+
+.btn-calcular{
+    border: border-width border-style border-color;
+    display: block;
+    border-color: #7051E2;
+    background-color: #1A1A1B;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Sora';
+    text-transform: uppercase;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    font-size: 18px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 35px;
+    width: 30%;
+    padding: 20px;
+    border-radius: 45px;
+    margin-block-end: 1em;
+}
+
+.resultados{
+    border-left: 35vw;
+}
+
